@@ -16,6 +16,9 @@
 		2509CFA1207B4DB80066A6F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFA0207B4DB80066A6F1 /* main.m */; };
 		2509CFAB207B4DB80066A6F1 /* BricksGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFAA207B4DB80066A6F1 /* BricksGameTests.m */; };
 		2509CFB6207B4DB80066A6F1 /* BricksGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFB5207B4DB80066A6F1 /* BricksGameUITests.m */; };
+		2509CFC6207B4DF20066A6F1 /* BricksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFC5207B4DF20066A6F1 /* BricksView.m */; };
+		2509CFC9207B4E020066A6F1 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFC8207B4E020066A6F1 /* BallView.m */; };
+		2509CFCC207B4E1C0066A6F1 /* BasePaddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2509CFCB207B4E1C0066A6F1 /* BasePaddleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		2509CFB1207B4DB80066A6F1 /* BricksGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BricksGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2509CFB5207B4DB80066A6F1 /* BricksGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BricksGameUITests.m; sourceTree = "<group>"; };
 		2509CFB7207B4DB80066A6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2509CFC4207B4DF20066A6F1 /* BricksView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BricksView.h; sourceTree = "<group>"; };
+		2509CFC5207B4DF20066A6F1 /* BricksView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BricksView.m; sourceTree = "<group>"; };
+		2509CFC7207B4E020066A6F1 /* BallView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
+		2509CFC8207B4E020066A6F1 /* BallView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
+		2509CFCA207B4E1C0066A6F1 /* BasePaddleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePaddleView.h; sourceTree = "<group>"; };
+		2509CFCB207B4E1C0066A6F1 /* BasePaddleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePaddleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,7 @@
 		2509CF8D207B4DAA0066A6F1 /* BricksGame */ = {
 			isa = PBXGroup;
 			children = (
+				2509CFC3207B4DCC0066A6F1 /* Helper */,
 				2509CF8E207B4DAB0066A6F1 /* AppDelegate.h */,
 				2509CF8F207B4DAB0066A6F1 /* AppDelegate.m */,
 				2509CF91207B4DAB0066A6F1 /* ViewController.h */,
@@ -133,6 +143,19 @@
 				2509CFB7207B4DB80066A6F1 /* Info.plist */,
 			);
 			path = BricksGameUITests;
+			sourceTree = "<group>";
+		};
+		2509CFC3207B4DCC0066A6F1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2509CFC4207B4DF20066A6F1 /* BricksView.h */,
+				2509CFC5207B4DF20066A6F1 /* BricksView.m */,
+				2509CFC7207B4E020066A6F1 /* BallView.h */,
+				2509CFC8207B4E020066A6F1 /* BallView.m */,
+				2509CFCA207B4E1C0066A6F1 /* BasePaddleView.h */,
+				2509CFCB207B4E1C0066A6F1 /* BasePaddleView.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2509CF93207B4DAB0066A6F1 /* ViewController.m in Sources */,
+				2509CFC6207B4DF20066A6F1 /* BricksView.m in Sources */,
 				2509CF99207B4DAB0066A6F1 /* BricksGame.xcdatamodeld in Sources */,
+				2509CFCC207B4E1C0066A6F1 /* BasePaddleView.m in Sources */,
 				2509CFA1207B4DB80066A6F1 /* main.m in Sources */,
 				2509CF90207B4DAB0066A6F1 /* AppDelegate.m in Sources */,
+				2509CFC9207B4E020066A6F1 /* BallView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
